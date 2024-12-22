@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GameZone/static/css/main.76f44dcf.css",
+    "main.js": "/GameZone/static/js/main.b2ea056e.js",
+    "static/media/RPS.png": "/GameZone/static/media/RPS.f4dc584f9495bf177387.png",
+    "static/media/snake.jpg": "/GameZone/static/media/snake.b6090fee830738454e6b.jpg",
+    "static/media/paper.png": "/GameZone/static/media/paper.38d092840925b54b0974.png",
+    "static/media/scissors.png": "/GameZone/static/media/scissors.373449a3d2f288a0a617.png",
+    "static/media/rock.png": "/GameZone/static/media/rock.22573a930d849889f5fe.png",
+    "static/media/ttt.png": "/GameZone/static/media/ttt.a90d908642b8d1284a5e.png",
+    "static/media/menu2.jpg": "/GameZone/static/media/menu2.9d15396e2e9254b309c6.jpg",
+    "index.html": "/GameZone/index.html",
+    "main.76f44dcf.css.map": "/GameZone/static/css/main.76f44dcf.css.map",
+    "main.b2ea056e.js.map": "/GameZone/static/js/main.b2ea056e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76f44dcf.css",
+    "static/js/main.b2ea056e.js"
+  ]
+}
