@@ -1,0 +1,79 @@
+/* Game1.css */
+.bodyRPS {
+  width: 100%;
+  height: 100%;
+  
+}
+.heading{
+  background-color: #0C0C0C;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  color: rgb(255, 0, 0);
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  margin: 0px;
+  font-family: serif;
+}
+.choices {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 30px;
+}
+.choice>img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: contrast(200%);
+}
+.scorediv {
+  display: flex;
+  grid-gap: 90px;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: antiquewhite;
+}
+.names {
+  display: flex;
+  grid-gap: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: aliceblue;
+}
+.msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messege {
+  background-color: #0e2872;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choice {
+  width: 100px;
+  height: 150px;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.choice:not(.main) {
+  opacity: 0.5;
+}
+.choice:hover {
+  transform: scale(1.2);
+}
+.choice:active{
+  transform: scale(1);
+  
+}

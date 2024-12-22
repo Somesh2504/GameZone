@@ -1,0 +1,149 @@
+/* SnakeGame.css */
+
+.bodyS {
+    width: 100%;
+    height: 100%;
+   
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .snakehead{
+    position: relative;
+    top: 0px;
+    }
+  .scores {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    width: 420px;
+  }
+  #gameboard {
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    background-size: cover;
+    
+  }
+  .b-1 {
+    border: rgba(255, 255, 255, 0.5) solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 2px rgba(255, 255, 255, 0.4), 0px 0px 20px rgb(255, 255, 255, 0.4);
+    width:fit-content;
+  }
+  .b-2 {
+    border: rgba(255, 255, 255, 0.4) solid 10px;
+    border-radius: 18px;
+    box-shadow: inset 5px 5x 2px rgba(255, 255, 255, 0.3);
+    width:fit-content;
+  }
+  .b-3 {
+    border: rgba(255, 255, 255, 0.3) solid 10px;
+    border-radius: 10px;
+    width:fit-content;
+  }
+  .snake {
+    background-color: #000000;
+    border-radius: 7px;
+    z-index: 0;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+  }
+  .snake.head {
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  .food {
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    box-shadow: 0px 0px 10px rgba(255, 32, 32, 0.541);
+  }
+
+  .food::after,
+  .food::before {
+    content:'' ;
+    position: absolute;
+    background: conic-gradient(from var(--ang), transparent 0, red, green, blue, yellow, orange, red);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 3s linear infinite;
+  }
+  .food::after {
+    filter: blur(5px);
+    opacity: 0.5;
+  }
+  @property --ang {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @keyframes spin {
+    from {
+      --ang: 0deg;
+    }
+    to {
+      --ang: 360deg;
+    }
+  }
+  .h4 {
+    margin: 5px 0px;
+  }
+  .buttonS {
+    padding: 10px 20px;
+    border: 2px solid #32cd32;
+    background-color: #32cd32;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  .buttonS:hover {
+    background-color: white;
+    color: #32cd32;
+    border: 2px solid #32cd32;
+    box-shadow: 0 0 20px rgba(50, 205, 50, 0.5);
+    transform: scale(1.1);
+  }
+  .buttonS:active {
+    transform: scale(0.9);
+    background-color: #2e8b57;
+    color: white;
+    border: 2px solid white;
+  }
+  .startS {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+ 
+  @media screen and (max-width: 480px) {
+    #gameboard {
+      grid-template-columns: repeat(20, 15px);
+      grid-template-rows: repeat(20, 15px);
+      background-size: cover;
+    }
+    #img,
+    .img > img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
