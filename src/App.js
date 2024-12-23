@@ -19,9 +19,9 @@ function App() {
         </header>
         <div className='main'>
         <Routes> 
-          <Route exact path="/" element={ <Home></Home>} /> 
+          <Route exact path="/GameZone" element={ <Home></Home>} /> 
           <Route path="/RPS"  element={<RPS></RPS>} /> 
-          <Route path="/TTT"  element={<TTT></TTT>} /> 
+          <Route path="/TTT"  element={<TTT></TTT>} />
           <Route path="/Snake"  element={<Snake></Snake>} /> 
         </Routes> 
         </div>
